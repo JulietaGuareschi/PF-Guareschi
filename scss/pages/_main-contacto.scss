@@ -1,0 +1,56 @@
+/*main section contacto*/
+main{
+    .contacto-inicio{
+        h1{
+            font-size: 60px;
+            text-align: center;
+            color: map-get($boton-primario, text-primario);
+            border: 5px double rgb(19, 132, 19);
+        }
+        .contenido-contacto{
+            @include medidas-base;
+            display: flex;
+            justify-content: center;
+            /*background-color: nth($list: $colores, $n: 3);*/
+            /*width: 100%;
+            column-gap: 30px; 
+            margin-bottom: 100px;*/
+            .titulo-contacto{
+                width: 30%;
+                h2{
+                    background-color: nth($list: $colores, $n: 7);
+                    /*color: map-get($boton-primario, bg-primario); */
+                    color: black;
+                    text-align: center;
+                    border: 4px ridge rgb(13, 156, 89);
+                    font-size: 3vw;
+                }
+                .formulario-contacto{
+                    padding: 10px;
+                    align-items: center;
+                    line-height: 50px;
+                    font-size: 2vw;
+                    text-align: center;
+                    label{
+                        border: 2px solid rgb(192, 237, 255);
+                    }
+                    input{
+                        border: 10px groove rgb(0, 255, 149);
+                        border-radius: 20%;
+                        font-size: 2vw;
+                    }
+                    textarea{
+                        border: 15px groove rgb(0, 255, 149);
+                        border-radius: 20%;
+                        font-size: 2vw;
+                    }
+                }
+            }
+        }
+        .foto-mansion{
+            width: 100%;
+            text-align: center;
+            /*margin-bottom: 100px;*/
+        }                 
+    }
+}
